@@ -190,7 +190,7 @@ pub fn submit_session(state: State<AppState>, result: SessionResult) -> Result<S
     let summary = SessionSummary {
         correct_rate: if result.question_count > 0 { (result.correct_count as f64 / result.question_count as f64) * 100.0 } else { 0.0 },
         stars: if result.correct_count as f64 >= result.question_count as f64 * 0.9 { 3 } else if result.correct_count as f64 >= result.question_count as f64 * 0.7 { 2 } else { 1 },
-        gained_points: result.correct_count * 3 + if result.streak_days >= 7 { 5 } else { 0 },
+        gained_points: result.correct_count * 3,
         new_wrong: Vec::new(),
     };
     state.sessions.lock().unwrap().insert(session_id, summary.clone());

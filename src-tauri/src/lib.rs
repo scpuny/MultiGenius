@@ -2,8 +2,6 @@ pub mod commands;
 pub mod models;
 pub mod db;
 
-use commands::AppState;
-
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
