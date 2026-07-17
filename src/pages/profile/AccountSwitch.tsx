@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Card } from "../../components/Card";
-import * as bridge from "../../services/bridge";
 import { useChildStore } from "../../store/useChildStore";
 import { MAX_CHILDREN } from "../../types/models";
 import "./AccountSwitch.css";
 
 // 多账号切换（V3）：列出孩子、切换、添加、删除
 export function AccountSwitch() {
-  const { children, currentChildId, switchChild, addChild, deleteChild, loadChildren } = useChildStore();
+  const { children, currentChildId, switchChild, addChild, deleteChild } = useChildStore();
   const [adding, setAdding] = useState(false);
   const [name, setName] = useState("");
   const [grade, setGrade] = useState(1);

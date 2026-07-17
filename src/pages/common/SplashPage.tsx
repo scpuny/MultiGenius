@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export function SplashPage() {
   const nav = useNavigate();
   useEffect(() => {
-    const t = setTimeout(() => nav.replace("/home"), 1500);
+    const t = setTimeout(() => nav("/home", { replace: true }), 1500);
     return () => clearTimeout(t);
   }, [nav]);
 
