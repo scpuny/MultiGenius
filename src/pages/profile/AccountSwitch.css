@@ -1,0 +1,106 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.account__tip {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+  padding: 0 4px;
+}
+.account__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+.account__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.account__info {
+  flex: 1;
+}
+.account__name {
+  font-weight: 700;
+}
+.account__current {
+  font-size: 11px;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: var(--radius-pill);
+  margin-left: 6px;
+}
+.account__meta {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+}
+.account__switched {
+  font-size: var(--fs-sm);
+  color: var(--color-success);
+  font-weight: 600;
+}
+.account__switch {
+  padding: 8px 18px;
+}
+.account__del {
+  font-size: 18px;
+  color: var(--color-text-sub);
+  padding: 4px 8px;
+}
+.account__add {
+  margin-top: 4px;
+}
+.account__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.account__input {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: var(--fs-body);
+  outline: none;
+}
+.account__grades {
+  display: flex;
+  gap: 8px;
+}
+.account__grade {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-2);
+  color: var(--color-text-sub);
+  font-weight: 600;
+}
+.account__grade.is-on {
+  background: var(--color-primary);
+  color: #fff;
+}
+.account__form-actions {
+  display: flex;
+  gap: 10px;
+}
+.account__form-actions .btn {
+  flex: 1;
+}
+.account__hint {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+  padding: 4px;
+  line-height: 1.6;
+}

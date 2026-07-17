@@ -1,0 +1,74 @@
+.appquiz {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.appquiz__idx {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+}
+.appquiz__card {
+  text-align: center;
+}
+.appquiz__label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+  margin-bottom: 8px;
+}
+.appquiz__scene {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.appquiz__text {
+  font-size: var(--fs-sub);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.appquiz__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.appquiz__option {
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  font-size: 22px;
+  font-weight: 700;
+}
+.appquiz__expr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: var(--fs-display);
+  font-weight: 800;
+}
+.appquiz__input {
+  width: 90px;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid var(--color-primary);
+  font-size: var(--fs-display);
+  font-weight: 800;
+  color: var(--color-primary-deep);
+  background: transparent;
+  outline: none;
+}
+.appquiz__hint {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+  text-align: center;
+}
+.appquiz__fb {
+  text-align: center;
+  font-weight: 700;
+}
+.appquiz__fb--ok {
+  color: var(--color-success);
+}
+.appquiz__fb--no {
+  color: var(--color-danger);
+}

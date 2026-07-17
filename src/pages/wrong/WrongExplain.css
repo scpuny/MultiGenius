@@ -1,0 +1,76 @@
+.explain {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.explain__step {
+  font-size: var(--fs-sm);
+  color: var(--color-primary-deep);
+  font-weight: 700;
+}
+.explain__steps {
+  display: flex;
+  gap: 8px;
+}
+.explain__step-tab {
+  flex: 1;
+  padding: 10px 4px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-2);
+  color: var(--color-text-sub);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.explain__step-tab.is-on {
+  background: var(--color-primary);
+  color: #fff;
+}
+.explain__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.explain__origin {
+  font-weight: 700;
+}
+.explain__sub {
+  font-weight: 600;
+}
+.explain__dots {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.explain__formula {
+  font-size: var(--fs-sub);
+  font-weight: 700;
+  color: var(--color-primary-deep);
+}
+.explain__mnemonic {
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-weight: 600;
+}
+.explain__body {
+  font-size: var(--fs-body);
+  color: var(--color-text);
+}
+.explain__wrong {
+  background: #fff0f0;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  color: var(--color-danger);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+.explain__life {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+}
+.explain__nav {
+  display: flex;
+  gap: 10px;
+}
+.explain__nav .btn {
+  flex: 1;
+}

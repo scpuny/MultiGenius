@@ -1,0 +1,14 @@
+.audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-2);
+  color: var(--color-primary-deep);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.audio-btn__icon {
+  font-size: 18px;
+}

@@ -1,0 +1,41 @@
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.numpad__key {
+  height: 58px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+  transition: transform 0.08s ease;
+}
+.numpad__key:active {
+  transform: scale(0.95);
+}
+.numpad__key--fn {
+  color: var(--color-text-sub);
+}
+.numpad__key--confirm {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-float);
+}
+
+/* 平板：放大按键 */
+@media (min-width: 768px) {
+  .numpad {
+    max-width: 520px;
+    gap: 16px;
+  }
+  .numpad__key {
+    height: 80px;
+    font-size: 32px;
+    border-radius: 24px;
+  }
+}

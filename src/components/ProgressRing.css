@@ -1,0 +1,26 @@
+.ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ring svg {
+  display: block;
+}
+.ring__bg {
+  fill: none;
+  stroke: var(--color-line);
+}
+.ring__fg {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+.ring__label {
+  position: absolute;
+  font-size: var(--fs-sub);
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+}

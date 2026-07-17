@@ -1,0 +1,24 @@
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.badge__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+.badge.is-locked .badge__icon {
+  background: var(--color-line);
+  filter: grayscale(1);
+}
+.badge__name {
+  font-size: var(--fs-sm);
+  color: var(--color-text-sub);
+}

@@ -1,0 +1,26 @@
+[package]
+name = "chengfa-tutor"
+version = "1.0.0"
+description = "乘法小天才 - 儿童乘法入门与进阶训练 APP"
+authors = ["you"]
+edition = "2021"
+
+[lib]
+name = "chengfa_tutor_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+uuid = { version = "1", features = ["v4"] }
+chrono = "0.4"
+
+# 生产存储：rusqlite（离线本地），骨架阶段用内存态 State 演示桥接闭环，
+# 见 src/db.rs 的迁移说明。启用时取消下行注释并在 commands 中替换为 Db 调用：
+# rusqlite = { version = "0.32", features = ["bundled"] }

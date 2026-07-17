@@ -1,0 +1,52 @@
+:root {
+  /* 配色：暖色护眼基调，源自原型背景 #FFF8F0 */
+  --color-bg: #fff8f0;
+  --color-surface: #ffffff;
+  --color-surface-2: #fff1e0;
+  --color-primary: #ff9f43; /* 主橙 */
+  --color-primary-soft: #ffe7c7;
+  --color-primary-deep: #f97c0a;
+  --color-text: #3a3a3a;
+  --color-text-sub: #9a9a9a;
+  --color-success: #4caf50;
+  --color-danger: #ff6b6b;
+  --color-warn: #ffb020;
+  --color-line: #f0e6da;
+
+  /* 圆角 */
+  --radius-card: 24px;
+  --radius-lg: 20px;
+  --radius-sm: 12px;
+  --radius-pill: 9999px;
+
+  /* 字号 */
+  --fs-display: clamp(28px, 8vw, 44px); /* 大数字题面 */
+  --fs-title: 22px;
+  --fs-sub: 18px;
+  --fs-body: 16px;
+  --fs-sm: 13px;
+
+  /* 间距 */
+  --gap: 12px;
+  --pad: 16px;
+  --pad-lg: 20px;
+
+  /* 导航 */
+  --nav-h: 64px;
+
+  /* 阴影 */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 6px 20px rgba(255, 159, 67, 0.18);
+
+  /* 断点（JS 用，CSS 用媒体查询） */
+  --bp-tablet: 768px;
+}
+
+/* 平板双端适配：>=768px 放大按键/字号 */
+@media (min-width: 768px) {
+  :root {
+    --fs-display: clamp(40px, 5vw, 64px);
+    --radius-card: 28px;
+    --pad-lg: 28px;
+  }
+}

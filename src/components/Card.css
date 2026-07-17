@@ -1,0 +1,14 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+.card--pad {
+  padding: var(--pad-lg);
+}
+.card--click {
+  transition: transform 0.08s ease;
+}
+.card--click:active {
+  transform: scale(0.98);
+}

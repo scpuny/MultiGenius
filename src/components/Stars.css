@@ -1,0 +1,10 @@
+.stars {
+  display: inline-flex;
+  gap: 4px;
+}
+.stars__item {
+  color: var(--color-line);
+}
+.stars__item.is-on {
+  color: var(--color-warn);
+}
